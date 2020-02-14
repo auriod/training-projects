@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Викторина</title>
+	<meta charset='utf-8'>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body bgcolor='#19044A'>
+	<header>
+		<p class="title">ВИКТОРИНА</p>
+	</header>
+	<input type='image' class="start" src='image/star.png' width="200" title="НАЧНЕМ?">
+	<div class="game_container">	
+		<input type='image' class="second" src='image/star.png' width="70" title="Звездочка дарует второй шанс">
+	  	<div class="question"></div>
+		<div class="ansver" id='a'></div>
+		<div class="ansver" id='b'></div>
+		<div class="ansver" id='c'></div>
+		<div class="ansver" id='d'></div>
+		<h1 id='messege'></h1>
+		<div class="timer"></div>
+		<div class="gane">
+			<ul>
+				<li class='level_gane' id='level_6'>300000</li>
+			    <li class='level_gane' id='level_5'>100000</li>
+			    <li class='level_gane' id='level_4'>50000</li>
+			    <li class='level_gane' id='level_3'>10000</li>
+			    <li class='level_gane' id='level_2'>7000</li>
+			    <li class='level_gane' id='level_1'>3000</li>
+			    <li class='level_active' id='level_0'>1000</li>  
+			</ul>
+		</div>	
+	</div>
+	<div class="losses">Увы! Вы проиграли и не заработали ничего!</div>
+	<div class="winner"><img src="image/win_star.webp" alt="Радостная звездочка" id="win_star"><br>Ура! Вы выиграли целых <b>300000</b> ничего! Поздравляем!</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

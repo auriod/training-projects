@@ -1,0 +1,192 @@
+body {
+	background: #E0F8E6;
+	margin: 0;
+	padding: 1px;
+}
+
+.menu-container {
+	margin: 0;
+	box-sizing: border-box;
+	width: 100%;
+	height: 200px;
+	position: relative; left: 0; top: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+	
+	#menu-logo {
+	    color: #610B0B;
+	    font-size: 60px;
+	    font-family: Garamond;
+	    text-align: center;
+	    font-weight: 700;
+	    margin-top: 20px;
+	    margin-left: 40px;
+	    position: relative; top: 10px;  
+  	}
+
+  	.img-menu {
+  		width: 50px;
+  		height: 50px;
+  		position: relative; top: 15px;
+  		margin-right: 10px;
+  	}
+
+	.menu-container ul {
+		color: #610B0B;
+	    font-size: 25px;
+	    font-family: Garamond;
+	    display: flex;
+		flex-direction: row;
+	    justify-content: space-between;
+	    list-style-type: none;
+	}
+
+	.menu-container ul a:visited {
+		color: #610B0B;
+	}
+
+	.menu-container li {
+		margin-right: 50px;
+		margin-left: 30px;
+	}
+
+a {
+	text-decoration: none;
+}
+
+
+.info-pays {
+	margin: auto;
+	width: 1200px;
+	position: relative;
+}
+	
+	#add-button {
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		top: 10px;
+		right: 30px;
+	}
+	
+	#add-button:hover {
+		cursor: pointer;
+	}
+
+	.info-pays h1 {
+		color: DarkBlue;
+		font-family: Courier;
+		font-size: 30px;
+		font-weight: bold;
+	}
+
+	.info-pays h3 {
+		color: DarkBlue;
+		font-family: Courier;
+		font-size: 20px;
+	}
+
+
+.table-info {
+	border-collapse: collapse;
+	border: 3px solid grey;
+	margin: auto;
+	width: 860px;
+	margin-bottom: 20px;
+	background: white;
+}
+	#big-table {
+		width: 1200px;
+	}
+
+	.table-info th {
+		border: 1px solid grey;
+		color: grey;
+		font-family: Courier;
+		font-size: 25px;
+	}
+
+	.table-info td {
+		border: 1px solid grey;
+		font-family: Courier;
+		font-size: 20px;
+		text-align: center;		
+	}
+
+	#column-sum {
+		background: #F5ECCE;
+		width: 20%;
+	}
+
+	#column-category {
+		background: #CEF6F5;
+		width: 25%;
+	}
+
+	#column-comment {
+		background: #CEF6F5;
+		width: 35%;
+	}
+
+	#column-data {
+		background: #F8E0F7;
+		width: 20%;
+	}
+	
+	#sum-th:hover {
+		cursor: pointer;
+	}
+
+	#data-th:hover {
+		cursor: pointer;
+	}
+
+.form-container {
+	margin: auto;
+	width: 800px;
+}
+
+	.form-container p {
+		display: inline-flex;
+		font-family: Courier;
+		font-size: 25px;
+		width: 300px;
+		margin-left: 40px;
+	}
+	
+	.form-container input {
+		width: 250px;
+		font-family: Courier;
+		font-size: 25px;
+	}
+
+	#comment-input {
+		width: 250px;
+		font-family: Courier;
+		font-size: 18px;
+		position: relative; top: 20px;
+	}
+
+	.form-container input:focus {
+		background: silver;
+	}
+	
+	.add-btn {
+		background: green;
+		color: white;
+		margin: 40px;
+		margin-left: 140px;
+		font-size: 20px;
+		font-family: Courier;
+	}
+
+	.form-container h1 {
+		color: DarkBlue;
+		font-family: Courier;
+		font-size: 30px;
+		font-weight: bold;
+	}
+
+

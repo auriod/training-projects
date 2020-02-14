@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="menu-container">
+        <p id="menu-logo">Мой бюджет</p>
+        <ul>
+            <a href="{{ url_for('index') }}">
+                <li>
+                    <img src="{{ url_for('static', filename='img/logo1.png') }}" class="img-menu">
+                    Общая статистика
+                </li>
+            </a>
+            <a href="{{ url_for('show_info_gain', field_sorted='data') }}">
+                <li>
+                    <img src="{{ url_for('static', filename='img/logo2.png') }}" class="img-menu">
+                    Доходы
+                </li>
+            </a>
+            <a href="{{ url_for('show_info_cost', field_sorted='data') }}">
+                <li><img src="{{ url_for('static', filename='img/logo3.png') }}" class="img-menu">
+                    Расходы
+                </li>
+            </a>
+            {#<a href="{{ url_for('form_cost') }}">
+                <li>Добавить расходы</li>
+            </a>
+            <a href="{{ url_for('form_gain') }}">
+                 <li>Добавить доходы</li>
+            </a>#}
+        </ul>
+   </div>
+
+    <div class="info-pays">
+        <h1>Мои {{ title.lower() }}: {{ score }}</h1>
+        <img src="{{ url_for('static', filename='img/plus.png') }}" id="add-button">
+        <table class="table-info" id="big-table">
+            <tr>
+                <th id="sum-th">Cумма</th>
+                <th>Категория</th>
+                <th>Комментарии</th>
+                <th id="data-th">Дата</th>
+            </tr>
+            {% for pay in pays %}
+                <tr>
+                    <td id="column-sum">{{pay.sum}}</td>
+                    <td id="column-category">{{pay.category}}</td>
+                    <td id="column-comment">{{pay.comment}}</td>
+                    <td id="column-data">{{pay.data}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+:root {
+	--main-color: #120A2A;
+}
+
+body {
+	background: var(--main-color);
+}
+
+.start {
+	position: absolute;
+	top: 260px;
+	right: 45%;
+}
+
+header {
+	text-align: center;
+	width: 100%;
+	height: 100px;
+	margin: 0;
+	margin-bottom: 100px;
+	padding: 1px;
+	box-sizing: border-box;
+}
+
+.title {
+	font-size: 60px;
+	font-family: 'Arial';
+	color: #B3ED2C;
+	margin: 0;
+	margin-top: 10px;
+ 	font-weight: 900;
+  	letter-spacing: 5px;
+}
+
+.game_container {
+	position: relative;
+	width: 1100px;
+	margin: 50px auto;
+	padding: 1px;
+	display: none;
+
+}
+
+.timer {
+	position: absolute;
+	top: 25px;
+	right: 25px;
+	color: white;
+	font-size: 35px;
+	font-family: Courier;
+	width: 150px;
+	height: 35px;
+	text-align: center;
+}
+
+.second {
+	position: absolute;
+	right: 160px;
+	margin: 40px;
+	display: none;
+}
+
+h1 {
+  color: DarkBlue;
+  font-size: 20px;
+  font-family: Courier;
+}
+
+.question {
+  margin: 20px;
+  margin-left: 100px;
+  margin-bottom: 50px;
+  width: 700px;
+  height: 50px;
+  font-size: 35px;
+  text-align: center;
+  font-family: Arial;
+  color: #FFD700;
+  font-weight: bold;
+
+}
+
+.ansver {
+	display: inline-block;
+	color: white;
+	padding-top: 14px;
+	margin: 10px;
+	width: 200px;
+	height: 60px;
+	font-size: 23px;
+	text-align: center;
+	font-family: Arial;
+	border-radius: 8px;
+	font-weight: 300;
+	cursor: pointer;
+}
+
+.ansver_choice {
+	color: white;
+	background: grey;
+	font-weight: bold;
+}
+
+.ansver_win {
+	color: white;
+	background: green;
+	font-weight: bold;
+}
+
+.ansver_loss {
+	color: white;
+	background: red;
+	font-weight: bold;
+}
+
+.gane {
+	position: absolute;
+	top: 65px;
+	right: 25px;
+	width: 150px;
+	height: 230px;
+	padding: 1px;
+}
+
+ul {
+	color: #F9C941;
+	font-size: 25px;
+	font-family: Courier;
+	list-style-type: none;
+}
+
+.level_gane {
+	padding-bottom: 2px;
+}
+
+.level_active {
+	padding-bottom: 2px;
+	font-weight: bold;
+	list-style-type: square;
+}
+
+.level_win {
+	padding-bottom: 2px;
+	font-weight: bold;
+	list-style-type: none;
+	color: lime;
+}
+
+#messege {
+	margin: 50px center;
+	font-size: 25px;
+	color: #B3ED2C;
+	letter-spacing: 3px;
+}
+
+.losses {
+	margin: 50px auto;
+	text-align: center;
+	font-size: 30px;
+	font-family: Arial;
+	font-weight: 400;
+	color: red;
+	letter-spacing: 5px;
+	text-shadow: 1px 1px white, 1px -1px white, -1px 1px white, -1px -1px white, 3px 3px 6px rgba(0,0,0,.5);
+	display: none;
+}
+
+.winner {
+	margin: 50px auto;
+	text-align: center;
+	font-size: 30px;
+	font-family: Arial;
+	font-weight: 400;
+	color: gold;
+	letter-spacing: 5px;
+	text-shadow: 1px 1px white, 1px -1px white, -1px 1px white, -1px -1px white, 3px 3px 6px rgba(0,0,0,.5);
+	display: none;
+}
+
+#win_star {
+	width: 250px;
+	height: 250px;
+}

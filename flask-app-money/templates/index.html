@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Дневник расходов</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="menu-container">
+        <p id="menu-logo">Мой бюджет</p>
+        <ul>
+            <a href="{{ url_for('index') }}">
+                <li>
+                    <img src="{{ url_for('static', filename='img/logo1.png') }}" class="img-menu">
+                    Общая статистика
+                </li>
+            </a>
+            <a href="{{ url_for('show_info_gain', field_sorted='data') }}">
+                <li>
+                    <img src="{{ url_for('static', filename='img/logo2.png') }}" class="img-menu">
+                    Доходы
+                </li>
+            </a>
+            <a href="{{ url_for('show_info_cost', field_sorted='data') }}">
+                <li><img src="{{ url_for('static', filename='img/logo3.png') }}" class="img-menu">
+                    Расходы
+                </li>
+            </a>
+            {#<a href="{{ url_for('form_cost') }}">
+                <li>Добавить расходы</li>
+            </a>
+            <a href="{{ url_for('form_gain') }}">
+                 <li>Добавить доходы</li>
+            </a>#}
+        </ul>
+    </div>
+
+    <div class="info-pays">
+        <h1>Общая статистика</h1>
+        <h3>Состояние Вашего счета: {{ score }}</h3>
+        <h3>Долги: {{ credit }}</h3>
+        <table class="table-info" id="big-table">
+            <tr>
+                <th>Cумма</th>
+                <th>Категория</th>
+                <th>Дата</th>
+            </tr>
+            {% for d in data %}
+                {% if d.type == 'gain' %}
+                <tr style="color:green;">
+                {% else %}
+                <tr style="color:red;">
+                {% endif %}
+                    <td id="column-sum">{{d.sum}}</td>
+                    <td id="column-category">{{d.category}}</td>
+                    <td id="column-data">{{d.data}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+</body>
+</html>
