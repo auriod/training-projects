@@ -90,3 +90,6 @@ def add_gain():
     return redirect(url_for('form_gain'))
 
 
+if __name__ == '__main__':
+	app.run()
+
